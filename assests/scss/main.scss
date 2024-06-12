@@ -88,11 +88,12 @@ $one_two_three_color :rgb(255 89 18);
 }
 
 .main_heading-1 {
-    h1{
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 700;
-}
+    .one {
+        font-size: 3rem;
+        // text-align: center;
+        font-weight: 700;
+    }
+   
 }
 .row {
 
@@ -126,8 +127,9 @@ $one_two_three_color :rgb(255 89 18);
 
                 &:hover {
                     background-color: #0064ab;
-                    transform: rotate(2deg);
-                    transition: all 0.4s linear;
+                    transform: translateY(-0.4rem);
+                    transition: all 0.7s linear;
+                    box-shadow: 0 0 2px 1px #ffffff;
                 }
             }
         }
@@ -141,10 +143,9 @@ $one_two_three_color :rgb(255 89 18);
             transition: all 0.3s ease-in;
 
             img {
-                opacity: 0.9;
-                width: 100%;
-                height: 100%;
-                border-radius: 1rem;
+                opacity: 0.8;
+                width: 80%;
+                // border-radius: 1rem;
                 // box-shadow: 0rem 0.2rem 0.2rem #1a1a1a29;
                 transition: all 0.6s ease-in;
             }
@@ -160,10 +161,41 @@ $one_two_three_color :rgb(255 89 18);
     }
 }
 
+//linux window btn
+.linux_window_btn{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+ .main-button{    
+         a{
+            margin-inline: 0.7rem;
+            text-decoration: none;
+            font-size: 1.4rem;
+            // background-color: #fab400;
+            padding: 0.4rem 1rem;
+            border: 1px solid #003666;
+            color: #003666;
+            border-radius: 0.3rem;
+            i{
+                padding-inline: 0.3rem;
+            }
+            &:not(:first-child){
+                background-color: #003666;
+                color: #fff;
+            }
+            &:hover{
+                background-color: #fab400;
+                color: #fff;
+                // border: none;
+                border:1px solid transparent;
+            }
+         } 
+   }   
+}
 
-.title_heading{
-    h4{
-        color:$heading_top_color;
+.title_heading {
+    h4 {
+        color: $heading_top_color;
         font-size: 1.5rem;
     }
     .box_heading{
@@ -269,7 +301,7 @@ $des_heading_color:#5b72a0;
             text-align: left;
             line-height: 2.5rem;
             font-size: 1.5rem;
-         }
+        }
     }
     .row_center{
         margin: auto ;
@@ -398,9 +430,11 @@ $des_heading_color:#5b72a0;
         align-items: center;
         margin: 0;
         padding: 0;
-        li{   
-            font-size: 1.4rem  !important;      
-            i{
+
+        li {
+            font-size: 1.4rem !important;
+
+            i {
                 font-size: 1.6rem;
                 color: $add_cart_color;
                 margin-right: 0.7rem;
@@ -409,10 +443,107 @@ $des_heading_color:#5b72a0;
         }
     }
 
- }
+}
+// popular part 
+.popular-main{
+    padding: 4rem 0;
+    margin: 2rem 0rem;
+    // background-color: rgba(255, 0, 0, 0.051);
+    .main-title{
+        margin: 1rem 0 2rem 0;
+        div{
+            font-size: 2.7rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            color: rgb(47, 78, 126);
+        }
+    }
+    .hr-line{
+        width: 20%;
+        margin: 2rem auto;
+        color: #cc880a;
+        font-size: 10rem;
+    //    border-bottom: 2px solid #faa200;
+    }
+    .main_box{
+        padding: 2rem 1rem;
+        text-align: center;
+        border: 1px solid rgba(128, 128, 128, 0.303);
+        height: 100%;
+        transition: box-shadow 0.4s ease;
+        
+        &:hover{
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.10);
+            transition: box-shadow 0.3s ease;
+        }
 
- #footer_link_size{
-    a{
+        .heading-one{
+            display: block;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #50205c;
+            img{
+                height: 3rem;
+                width: 3rem;
+                margin: 0.7rem auto;
+                display: block;
+                opacity: 0.7;
+                transition: all 0.5s linear;
+                
+                animation: motionUp 1s ease-in 1s infinite ;
+
+                &:hover{
+                    opacity: 1;
+                    transition: all 0.5s linear;
+                    
+                }
+
+
+                @keyframes motionUp {
+                0% { transform: translateY(0.5rem); }                
+                40% { transform: translateY(1rem); } 
+                65% { transform: translateY(1rem); } 
+                100% { transform: translateY(0.5rem) }
+                
+              }
+                    
+            }
+        }
+        p{
+           font-size: 1.4rem; 
+           line-height: 2.5rem;
+        }
+        
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .main-title{
+        margin: 0 0 1rem 0;
+        div{
+            font-size: 1.7rem !important;           
+        }
+    }
+    .main_box{
+      
+       
+        padding: 1.3rem 1rem;
+        // border: 1px solid gray;
+        .heading-one{
+            font-size: 1.6rem !important;
+            font-weight: 600;
+            color: #535458;
+            
+        }
+        p{
+           font-size: 1.1rem !important; 
+           line-height: 2.4rem;
+        }
+    }
+}
+
+#footer_link_size {
+    a {
         font-size: 1.1rem;
     }
     ul{
@@ -823,67 +954,4 @@ $add_cart_color:#4e84c6;
         color: #fff;
         }
     }
-}
-
-//whatsap chat
-.whatsap_button {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.9;
-  transition: all 0.5s;
-  z-index: 300;
-  &:hover {
-    opacity: 1;
-    transition: all 0.5s;
-  }
-
-  .float {
-    position: fixed;
-    width: 45px;
-    height: 45px;
-    bottom: 68px;
-    right: 16px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 20px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 300;
-    display: grid;
-    // filter: grayscale(100);
-    animation: blink 1s infinite;
-
-    &:hover {
-      filter: grayscale(0);
-    }
-  }
-  .call_icon {
-    transition: all 0.5s;
-    background-color: #0787bd;
-    &:hover {
-      .bi-telephone-fill {
-        transform: rotate(135deg);
-        transition: all 0.5s;
-      }
-    }
-  }
-  .top-1 {
-    bottom: 120px;
-  }
-  .my-float {
-    align-self: center;
-  }
-  @keyframes blink {
-    0%{
-        opacity: 0.5;
-    }
-    50%{
-        opacity: 0.9;
-    }
-    100%{
-        opacity: 0.5;
-    }
-  }
 }

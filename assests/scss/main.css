@@ -42,7 +42,7 @@ body {
 }
 
 .background_random {
-  background: linear-gradient(to right, rgba(3, 3, 3, 0.88), rgba(11, 11, 11, 0.657)), url("../img/window-vps-hosting/bg.jpg");
+  background: linear-gradient(to right, rgb(25, 26, 52), rgba(0, 0, 0, 0.66)), url(../img/window-vps-hosting/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@ body {
 }
 
 .main_heading-1 .one {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -117,6 +117,41 @@ body {
   opacity: 0.8;
   width: 80%;
   transition: all 0.6s ease-in;
+}
+
+@media screen and (max-width: 776px) {
+  .first_section h2 {
+    font-size: 3rem;
+  }
+  .second_image img {
+    width: 100% !important;
+  }
+}
+.linux_window_btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+.linux_window_btn .main-button a {
+  margin-inline: 0.7rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #003666;
+  color: #003666;
+  border-radius: 0.3rem;
+}
+.linux_window_btn .main-button a i {
+  padding-inline: 0.3rem;
+}
+.linux_window_btn .main-button a:not(:first-child) {
+  background-color: #003666;
+  color: #fff;
+}
+.linux_window_btn .main-button a:hover {
+  background-color: #fab400;
+  color: #fff;
+  border: 1px solid transparent;
 }
 
 .title_heading h4 {
@@ -226,8 +261,8 @@ body {
 .desc_section_bg .first_section_para p {
   padding: 0rem 0rem 0rem 0.5rem;
   text-align: left;
-  line-height: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  opacity: 0.8;
 }
 .desc_section_bg .row_center {
   margin: auto;
@@ -336,7 +371,7 @@ body {
   padding: 0;
 }
 .price_box .price_specs li {
-  font-size: 1.4rem !important;
+  font-size: 1.2rem !important;
 }
 .price_box .price_specs li i {
   font-size: 1.6rem;
@@ -345,6 +380,103 @@ body {
   font-weight: 800;
 }
 
+.popular-main {
+  padding: 0rem 0;
+  margin: 0rem 0rem;
+}
+.popular-main .main-title {
+  margin: 1rem 0 2rem 0;
+}
+.popular-main .main-title div {
+  font-size: 2.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: rgb(47, 78, 126);
+}
+.popular-main .hr-line {
+  width: 20%;
+  margin: 2rem auto;
+  color: #cc880a;
+  font-size: 10rem;
+}
+.popular-main .main_box {
+  padding: 2rem 1rem;
+  text-align: center;
+  border: 1px solid rgba(128, 128, 128, 0.303);
+  height: 100%;
+  transition: box-shadow, background-color 0.4s ease;
+  background-color: #ecf2f6;
+}
+.popular-main .main_box:hover {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  transition: box-shadow, background-color 0.3s ease;
+  background-color: #fff;
+}
+.popular-main .main_box:hover img {
+  opacity: 1;
+}
+.popular-main .main_box .heading-one {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #50205c;
+}
+.popular-main .main_box .heading-one img {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.7rem auto;
+  display: block;
+  opacity: 0.7;
+  transition: all 0.5s linear;
+  animation: motionUp 1s ease-in 1s infinite;
+}
+.popular-main .main_box .heading-one img:hover {
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+@keyframes motionUp {
+  0% {
+    transform: translateY(0.5rem);
+  }
+  40% {
+    transform: translateY(1rem);
+  }
+  65% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+.popular-main .main_box p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .main-title {
+    margin: 0 0 1rem 0;
+  }
+  .main-title div {
+    font-size: 1.7rem !important;
+  }
+  .heading-one img {
+    animation: none;
+  }
+  .main_box {
+    padding: 1.3rem 1rem;
+  }
+  .main_box .heading-one {
+    font-size: 1.6rem !important;
+    font-weight: 600;
+    color: #535458;
+  }
+  .main_box p {
+    font-size: 1.1rem !important;
+    line-height: 2.4rem;
+  }
+}
 #footer_link_size a {
   font-size: 1.1rem;
 }
@@ -572,6 +704,22 @@ body {
   line-height: 2rem;
 }
 
+/* Popular uses include */
+.vps-main_content {
+  padding: 5rem 0;
+}
+.vps-main_content .vps-heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+  color: rgb(47, 78, 126);
+}
+.vps-main_content li {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
 /* Features3 CSS */
 .bx-white-h-one .line-greens {
   margin: 24px 0;
@@ -685,4 +833,61 @@ body {
 }
 .bx-home-one:hover .secondary-text {
   color: #fff;
+}
+
+.whatsap_button {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  transition: all 0.5s;
+  z-index: 300;
+}
+.whatsap_button:hover {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.whatsap_button .float {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 68px;
+  right: 16px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 300;
+  display: grid;
+  animation: blink 1s infinite;
+}
+.whatsap_button .float:hover {
+  filter: grayscale(0);
+}
+.whatsap_button .call_icon {
+  transition: all 0.5s;
+  background-color: #0787bd;
+}
+.whatsap_button .call_icon:hover .bi-telephone-fill {
+  transform: rotate(135deg);
+  transition: all 0.5s;
+}
+.whatsap_button .top-1 {
+  bottom: 120px;
+}
+.whatsap_button .my-float {
+  align-self: center;
+}
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }/*# sourceMappingURL=main.css.map */

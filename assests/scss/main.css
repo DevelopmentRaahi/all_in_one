@@ -10,12 +10,7 @@
   box-sizing: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   color: #333;
 }
@@ -42,10 +37,14 @@ body {
 }
 
 .background_random {
-  background: linear-gradient(to right, rgb(25, 26, 52), rgba(0, 0, 0, 0.66)), url(../img/window-vps-hosting/bg.jpg);
+  background: linear-gradient(to right, rgba(3, 3, 3, 0.895), rgba(11, 11, 11, 0.855)), url("../img/share-hosting/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 40rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-vertical i {
@@ -72,8 +71,6 @@ body {
 
 .row-design_gap {
   padding: 2rem 0px;
-  display: flex;
-  align-items: center;
 }
 .row-design_gap h2 {
   font-size: 3.7rem;
@@ -89,16 +86,14 @@ body {
 }
 .row-design_gap .first_section {
   position: relative;
-}
-.row-design_gap .first_section h2 span {
-  color: rgb(255, 255, 255);
+  margin: 5rem 1rem;
 }
 .row-design_gap .first_section .btn-design {
   background-color: #fc5a15;
   color: #fff;
   font-size: 1.2rem;
   padding: 0.6rem 2rem;
-  transition: all 0.7s linear;
+  transition: all 0.4s linear;
 }
 .row-design_gap .first_section .btn-design:hover {
   background-color: #0064ab;
@@ -201,24 +196,18 @@ body {
 .price_head {
   padding: 3rem 0rem;
 }
-.price_head .baseline-one {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 1rem;
-}
-.price_head .baseline-one span {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #337ab7;
-  padding: 0.2rem 1rem;
-  border-radius: 0.5rem;
-}
 .price_head p {
   font-size: 1.5rem;
   text-align: center;
   color: rgb(64, 58, 85);
+}
+.price_head p span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #337ab7;
+  padding: 0.2rem 1rem;
+  border-radius: 0.3rem;
 }
 .price_head h4 {
   text-align: center;
@@ -229,14 +218,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .second_image img {
-    display: block;
-  }
-  .row-design_gap .first_section {
-    text-align: center;
-  }
-  .row-design_gap .second_image {
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 }
 .desc_section_bg {
@@ -281,7 +263,7 @@ body {
 }
 .price_box h2 {
   color: rgb(64, 58, 85);
-  font-size: 2.1rem;
+  font-size: 2.4rem;
   margin-bottom: 1.2rem;
 }
 .price_box ul {
@@ -340,7 +322,6 @@ body {
   margin-top: 2rem;
 }
 .price_box .item_center h2 {
-  font-weight: 600;
   text-transform: uppercase;
 }
 .price_box .price_box-mid {
@@ -468,12 +449,11 @@ body {
 }
 
 .top_recomnd {
-  font-size: 1.2rem;
-  background-color: #48035b;
-  padding: 0.3rem 4rem;
+  font-size: 1.6rem;
+  background-color: #b0e2d6;
+  padding: 0.3rem 6rem;
   position: absolute;
   border-radius: 1rem;
-  color: #fff;
   top: -1.5rem;
   left: 50%;
   transform: translateX(-50%);
@@ -494,7 +474,6 @@ body {
   .row-design_gap .first_section {
     position: relative;
     margin: 0rem 1rem;
-    justify-content: center;
   }
   .price_specs {
     position: relative;
@@ -685,22 +664,6 @@ body {
 .icon_outer-box .icon-box .icon_main_desc-2 {
   font-size: 1.2rem;
   line-height: 2rem;
-}
-
-/* Popular uses include */
-.vps-main_content {
-  padding: 5rem 0;
-}
-.vps-main_content .vps-heading {
-  font-size: 2.6rem;
-  font-weight: 600;
-  line-height: 2.5rem;
-  margin-bottom: 2rem;
-  color: rgb(47, 78, 126);
-}
-.vps-main_content li {
-  font-size: 1.4rem;
-  line-height: 2.4rem;
 }
 
 /* Features3 CSS */

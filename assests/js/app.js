@@ -23,6 +23,15 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-
-
-
+var typed = new Typed(".typing ", {
+  strings: ["Solution" ],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});
+var typed1 = new Typed(".typing2 ", {
+  strings: ["Solution" ],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});

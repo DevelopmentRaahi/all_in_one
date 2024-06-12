@@ -34,16 +34,6 @@ font-size: 15px;
   font-size: rem;
   color: rgb(3, 121, 238);
 }
-
-
-.head_paragraph .textNav{
-  font-size: 1.4rem;
-}
-@media (max-width:1200px) {
-  .head_paragraph .textNav{
-  display: none;
-}
-}
 /* nabar upper */
 .lato-light {
   font-family: "Lato", sans-serif;
@@ -255,9 +245,10 @@ h1 h2 h3 h4 h5 h6{
     
 }
 .logo-content ul{
-  padding: 0.3rem 0.5rem;
-  display: grid;
-  flex-direction: row;  
+  padding-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -542,15 +533,13 @@ color: #1d1d1d;
   .ulset li{
     padding: 0px;
     margin: 0px;
-  }  
+  }
   .supprtnum div{
     font-size: 12px !important;
-   
   }
   
  
 }
-
 .cardimg{
   transition: all 0.3s linear !important;
 }
